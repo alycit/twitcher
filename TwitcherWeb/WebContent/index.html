@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Twitcher</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<div class="container">
+		<header class="page-header">
+			<h1>Twitcher</h1>
+		</header>
+		<section>
+		<div class="row-fluid" id="main_content">
+			<div class="well span3">
+				<h3>Sign Up</h3>
+			</div>
+			<div class="well span9">
+				<form class="form-horizontal" action="signup" method="post">
+					<fieldset>
+						<legend>All fields are required</legend>
+						<div class="control-group">
+							<label class="control-label" for="first_name">First Name</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="first_name" id="first_name" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="last_name">Last Name</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="last_name" id="last_name" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="username">Username</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" name="username" id="username" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input type="password" class="input-xlarge" name="password" id="password" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="password_confirmation">Password Confirmation</label>
+							<div class="controls">
+								<input type="password" class="input-xlarge" name="password_confirmation" id="password_confirmation" />
+							</div>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary btn-large">Save changes</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		</section>
+	</div>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/equalHeights.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#main_content').equalHeights();
+		});
+	</script>
+</body>
+</html>
