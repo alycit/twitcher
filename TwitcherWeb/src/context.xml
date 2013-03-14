@@ -10,8 +10,10 @@
 	<import resource="classpath:data-context.xml" />
 	
 	<bean id="registration" class="com.twitcher.ui.RegistrationServlet">
-		<!-- <property name="userMapper" ref="userMapper" /> -->
-		<!-- <property name="userMapper" ref="userDao" /> -->
-		<property name="userMapper" ref="userAdapter" />
+		<property name="userMapper" ref="userMapper" />
+	</bean>
+	
+	<bean id="submitTwitch" class="com.twitcher.ui.TwitchServlet">
+		
 	</bean>
 </beans>

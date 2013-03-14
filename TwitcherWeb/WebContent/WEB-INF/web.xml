@@ -25,6 +25,16 @@
 		<url-pattern>/signup</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>submitTwitch</servlet-name>
+		<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>submitTwitch</servlet-name>
+		<url-pattern>/twitch</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>

@@ -9,11 +9,7 @@ public class BaseDao {
 	private JdbcTemplate jdbcTemplate;
 	
 	public void setDataSource(DataSource dataSource) {
-		this.setJdbcTemplate(new JdbcTemplate(dataSource));
-	}
-
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
+		jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
 	public JdbcTemplate getJdbcTemplate() {
