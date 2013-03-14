@@ -3,6 +3,9 @@
     <wb-module deploy-name="TwitcherWeb">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="TwitcherData.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/TwitcherData/TwitcherData">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="twitcher"/>
         <property name="java-output-path" value="/TwitcherWeb/TwitcherWeb/WebContent/WEB-INF/classes"/>
     </wb-module>

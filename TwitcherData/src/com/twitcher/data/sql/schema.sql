@@ -1,0 +1,1 @@
+create table USERS (USER_ID varchar(16) NOT NULL, USER_NAME varchar(40) NOT NULL, PASSWORD varchar(16) NOT NULL, PRIMARY KEY (USER_ID));
