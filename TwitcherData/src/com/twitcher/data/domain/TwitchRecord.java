@@ -5,13 +5,21 @@ import java.util.Date;
 public class TwitchRecord {
 	private String text;
 	private Date date;
-	
+
 	public void setText(String text) {
-		this.text = text ;		
+		this.text = text;
 	}
 
-	public void setTime(Date date) {
-		this.date = date ;
+	public void setTime(Date time) {
+		this.date = time;
+	}
+
+	public Date getTime() {
+		return date;
+	}
+
+	public String getText() {
+		return text;
 	}
 
 }

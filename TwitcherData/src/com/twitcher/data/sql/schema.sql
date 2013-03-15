@@ -1,1 +1,2 @@
 create table USERS (USER_ID varchar(16) NOT NULL, USER_NAME varchar(40) NOT NULL, PASSWORD varchar(16) NOT NULL, PRIMARY KEY (USER_ID));
+create table TWITCHES (TWITCH_TEXT varchar(160) NOT NULL, TWITCH_TIME timestamp NOT NULL);

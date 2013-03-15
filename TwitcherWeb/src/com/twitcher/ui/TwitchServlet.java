@@ -10,8 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.HttpRequestHandler;
 
 import com.twitcher.data.domain.TwitchRecord;
+import com.twitcher.data.persistence.mybatis.TwitchMapper;
 
 public class TwitchServlet implements HttpRequestHandler {
+
+	private TwitchMapper twitchMapper;
 
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
@@ -19,10 +22,16 @@ public class TwitchServlet implements HttpRequestHandler {
 		
 		TwitchRecord twitch = new TwitchRecord();
 		twitch.setText(request.getParameter("twitchinput"));
-		twitch.setTime(new Date());		
+		twitch.setTime(new Date());
+		
+		twitchMapper.insert(twitch);
 		
 		request.getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
 
+	}
+	
+	public void setTwitchMapper(TwitchMapper twitchMapper){
+		this.twitchMapper = twitchMapper;
 	}
 
 }
