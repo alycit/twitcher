@@ -4,4 +4,8 @@
 	<insert id="insert" parameterType="com.twitcher.data.domain.TwitchRecord">
 		insert into TWITCHES values(#{text}, #{time})
 	</insert>
+	
+	<select id="allTheTwitches" resultType="com.twitcher.data.domain.TwitchRecord">
+		select * from TWITCHES
+	</select>
 </mapper>

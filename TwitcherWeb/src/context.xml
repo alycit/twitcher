@@ -16,4 +16,8 @@
 	<bean id="submitTwitch" class="com.twitcher.ui.TwitchServlet">
 		<property name="twitchMapper" ref="twitchMapper" />
 	</bean>
+	
+	<bean id="home" class="com.twitcher.ui.HomeServlet">
+		<property name="twitchMapper" ref="twitchMapper" />
+	</bean>
 </beans>
