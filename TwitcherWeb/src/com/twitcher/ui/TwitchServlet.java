@@ -26,7 +26,7 @@ public class TwitchServlet implements HttpRequestHandler {
 		
 		twitchMapper.insert(twitch);
 		
-		request.getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
+		request.getServletContext().getRequestDispatcher("/home").forward(request, response);
 
 	}
 	

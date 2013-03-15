@@ -27,7 +27,11 @@
 					</form>
 				</div>
 			</div>
-			<div class="row-fluid" >
+			<div class="row-fluid">
+				<h2>The Shakes</h2>
+				<c:forEach var="twitch" items="${twitchList}">
+   					<p>${twitch.time}: ${twitch.text}</p>
+				</c:forEach>
 			</div>
 		</section>
 	</div>
