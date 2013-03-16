@@ -27,7 +27,6 @@ public class TwitchServlet implements HttpRequestHandler {
 		twitchMapper.insert(twitch);
 		
 		request.getServletContext().getRequestDispatcher("/home").forward(request, response);
-
 	}
 	
 	public void setTwitchMapper(TwitchMapper twitchMapper){

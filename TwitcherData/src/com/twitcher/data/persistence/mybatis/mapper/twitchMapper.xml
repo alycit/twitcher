@@ -8,4 +8,8 @@
 	<select id="allTheTwitches" resultType="com.twitcher.data.domain.TwitchRecord">
 		select TWITCH_TEXT as text, TWITCH_TIME as time from TWITCHES order by time desc
 	</select>
+	
+	<select id="allTheTwitchesByUser" resultType="com.twitcher.data.domain.TwitchRecord">
+		select TWITCH_TEXT as text, TWITCH_TIME as time from TWITCHES order by time desc
+	</select>
 </mapper>

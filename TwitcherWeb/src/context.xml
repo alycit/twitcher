@@ -20,4 +20,10 @@
 	<bean id="home" class="com.twitcher.ui.HomeServlet">
 		<property name="twitchMapper" ref="twitchMapper" />
 	</bean>
+	
+	<bean id="login" class="com.twitcher.ui.LoginServlet">
+		<property name="userMapper" ref="userMapper" />
+	</bean>
+	
+	<bean id="logout" class="com.twitcher.ui.LogoutServlet" />
 </beans>

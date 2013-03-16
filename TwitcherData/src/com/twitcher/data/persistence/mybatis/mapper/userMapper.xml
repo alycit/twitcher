@@ -4,4 +4,8 @@
 	<insert id="insert" parameterType="com.twitcher.data.domain.UserRecord">
 		insert into USERS values(#{id}, #{name}, #{password})
 	</insert>
+	
+	<select id="findUser" parameterType="com.twitcher.data.domain.UserRecord" resultType="com.twitcher.data.domain.UserRecord">
+		select USER_ID as id, USER_NAME as name from USERS where USER_ID = '${id}' and PASSWORD = '${password}'
+	</select>
 </mapper>
